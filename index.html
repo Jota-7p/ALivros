@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALivros</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <img src="img/Logo.png" alt="Logo do site ALivros" class="header__logo">
+      <h1 class="header__title">ALivros</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <h2 class="carousel__title">Recomendações de Leitura</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/CódigoDa20.jpg" alt="Capa do livro Código da Vinci">
+            <p>Código da Vinci</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/MetamorfoseKafka.jpg" alt="Capa do livro Metamorfose">
+            <p>Metamorfose</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/DCasmurro.jpg" alt="Capa do livro Dom Casmurro">
+            <p>Dom Casmurro</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Iracema.jpg" alt="Capa do livro Iracema">
+            <p>Iracema</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Narnia.jpg" alt="Capa do livro Nárnia">
+            <p>As Crónicas de Nárnia</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Isaura.jpg" alt="Capa do livro A Escrava Isaura">
+            <p>A Escrava Isaura</p>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2024 ALivros - Projeto Didático</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+        1280: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+</body>
+</html>

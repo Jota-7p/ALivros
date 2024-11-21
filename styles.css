@@ -1,0 +1,69 @@
+:root {
+    --background-color: #F4F4F9;
+    --primary-color: #2C3E50;
+    --accent-color: #E67E22;
+    --text-color: #333333;
+    --font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header__logo {
+    height: 80px; /* Aumenta o tamanho da logo */
+    margin-bottom: 10px;
+  }
+  
+  .header__title {
+    color: var(--background-color);
+    font-size: 1.8rem; /* Aumenta o tamanho do texto */
+    margin: 0;
+  }
+  
+  .carousel {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel__title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .swiper-slide p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer__text {
+    color: var(--background-color);
+    font-size: 0.9rem;
+  }
+  
